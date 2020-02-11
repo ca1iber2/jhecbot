@@ -7,15 +7,13 @@ client.on('ready', () => {
 })
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase().includes('show theme')) {
-    msg.channel.sendMessage('i think cats (2019) would be a great theme')
+  if (msg.content.toLowerCase().includes('send reminder')) {
+    msg.channel.sendMessage('hey everyone! reminder that practice is today from 8 to 10pm in the SDS room')
   }
-  else if (msg.content === 'matt') {
-    msg.channel.sendMessage('matt is short for matthew rat is short for ratthew')
+  else if (msg.content.toLowerCase().includes('fire')) {
+    msg.channel.sendMessage('its lit')
   }
-  else if (msg.content === 'Matt') {
-    msg.channel.sendMessage('matt is short for matthew rat is short for ratthew')
-  }
+  
 })
 
 client.login(process.env.BOT_TOKEN)
