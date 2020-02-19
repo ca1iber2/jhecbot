@@ -13,6 +13,9 @@ client.on('message', msg => {
   else if (msg.content.toLowerCase().includes('fire')) {
     msg.channel.sendMessage('its lit')
   }
+  else if (msg.content.toLowerCase().includes('emma')) {
+    msg.channel.sendMessage('thats fantastic')
+  }
   
 })
 
