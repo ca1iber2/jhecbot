@@ -1,7 +1,7 @@
 
 const Discord = require('discord.js')
 const client = new Discord.Client()
-const userId = msg.guild.members.find(m => m.id === 200413880843894785);
+const userId = msg.guild.members.find(m => m.id === "200413880843894785");
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
