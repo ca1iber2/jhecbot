@@ -11,7 +11,19 @@ client.on('message', msg => {
   if((msg.author).id == '200413880843894785') {
 
   if(msg.content.toLowerCase().includes('a')) {
-    msg.channel.sendMessage('Hello there!');
+    msg.channel.sendMessage('ok boomer');
+  }
+  else if(msg.content.toLowerCase().includes('e')) {
+    msg.channel.sendMessage('ok boomer');
+  }
+    else if(msg.content.toLowerCase().includes('i')) {
+    msg.channel.sendMessage('ok boomer');
+  }
+    else if(msg.content.toLowerCase().includes('o')) {
+    msg.channel.sendMessage('ok boomer');
+  }
+    else if(msg.content.toLowerCase().includes('u')) {
+    msg.channel.sendMessage('ok boomer');
   }
   }
   else {
