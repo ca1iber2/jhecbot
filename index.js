@@ -8,7 +8,7 @@ client.on('ready', () => {
 })
 
 client.on('message', msg => {
-  const member = guild.member(message.author);
+  const member = (guild.member(message.author)).toString;
   if(!msg.author === '200413880843894785') {
 
   if(msg.content === 'psst') {
