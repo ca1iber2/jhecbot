@@ -8,7 +8,7 @@ client.on('ready', () => {
 })
 
 client.on('message', msg => {
-  if((msg.author).id == '200413880843894785') {
+  if((msg.author).id == '201460893341450241') {
 
   if(msg.content.toLowerCase().includes('a')) {
     msg.channel.sendMessage('ok boomer');
