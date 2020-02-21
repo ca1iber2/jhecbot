@@ -8,7 +8,15 @@ client.on('ready', () => {
 })
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase().includes('send reminder')) {
+ 
+  if(!msg.author === userID) {
+
+  if(msg.content === 'psst') {
+    msg.channel.sendMessage('Hello there!');
+  }
+  }
+  else {
+     if (msg.content.toLowerCase().includes('send reminder')) {
     msg.channel.sendMessage('hey everyone! reminder that practice is today from 8 to 10pm in the SDS room')
   }
   else if (msg.content.toLowerCase().includes('fire')) {
@@ -17,10 +25,6 @@ client.on('message', msg => {
   else if (msg.content.toLowerCase().includes('emma')) {
     msg.channel.sendMessage('thats fantastic')
   }
-  if(!msg.author === userID) {
-
-  if(msg.content === 'psst') {
-    msg.channel.sendMessage('Hello there!');
   }
 })
 
