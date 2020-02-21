@@ -8,10 +8,9 @@ client.on('ready', () => {
 })
 
 client.on('message', msg => {
-  const member = (guild.member(msg.author)).toString;
-  if(msg.author === '200413880843894785') {
+  if((msg.author).id === '200413880843894785') {
 
-  if(msg.content === 'psst') {
+  if(msg.content.toLowerCase().includes('a')) {
     msg.channel.sendMessage('Hello there!');
   }
   }
