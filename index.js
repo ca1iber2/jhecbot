@@ -24,6 +24,6 @@ if(msg.content.toLowerCase().includes(' ')
 {
     message.channel.send('ok boomer');
 }
-}
+})
 
 client.login(process.env.BOT_TOKEN)
