@@ -19,14 +19,6 @@ client.on('message', msg => {
   }
  
 })
-bot.on("message", function(message){
-if(!message.sender === userID)
-{
 
-if(message.content === 'psst')
-{
-    message.channel.send('Hello there!');
-}
-}});
 
 client.login(process.env.BOT_TOKEN)
