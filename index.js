@@ -1,12 +1,12 @@
 
 const Discord = require('discord.js')
 const client = new Discord.Client()
-
+const userId = message.guild.members.find(m => m.id === 200413880843894785);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
 })
-const userId = message.guild.members.find(m => m.id === 200413880843894785);
+
 client.on('message', msg => {
   if (msg.content.toLowerCase().includes('send reminder')) {
     msg.channel.sendMessage('hey everyone! reminder that practice is today from 8 to 10pm in the SDS room')
