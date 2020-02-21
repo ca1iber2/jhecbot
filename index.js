@@ -35,6 +35,9 @@ client.on('message', msg => {
   else if (msg.content.toLowerCase().includes('emma')) {
     msg.channel.sendMessage('thats fantastic')
   }
+  else if (msg.content.toLowerCase().includes('meatball')) {
+    msg.channel.sendMessage('<:firesafety:653503546783825924>')
+  }
   //}
 })
 
