@@ -1,15 +1,15 @@
 
 const Discord = require('discord.js')
 const client = new Discord.Client()
-const userId = msg.guild.members.find(m => m.id === "200413880843894785")
+
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
 })
 
 client.on('message', msg => {
- 
-  if(!msg.author === userID) {
+  const member = guild.member(message.author);
+  if(!msg.author === '200413880843894785') {
 
   if(msg.content === 'psst') {
     msg.channel.sendMessage('Hello there!');
