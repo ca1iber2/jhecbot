@@ -17,7 +17,7 @@ client.on('message', msg => {
   else if (msg.content.toLowerCase().includes('emma')) {
     msg.channel.sendMessage('thats fantastic')
   }
-  if(!msg.sender === userID) {
+  if(!msg.author === userID) {
 
   if(msg.content === 'psst') {
     msg.channel.sendMessage('Hello there!');
