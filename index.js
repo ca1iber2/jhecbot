@@ -17,13 +17,16 @@ client.on('message', msg => {
   else if (msg.content.toLowerCase().includes('emma')) {
     msg.channel.sendMessage('thats fantastic')
   }
-  if(!message.sender === userID)
+ 
+})
+bot.on("message", function(message){
+if(!message.sender === userID)
 {
 
-if(msg.content.toLowerCase().includes(' ')
+if(message.content === 'psst')
 {
-    message.channel.send('ok boomer');
+    message.channel.send('Hello there!');
 }
-})
+}});
 
 client.login(process.env.BOT_TOKEN)
