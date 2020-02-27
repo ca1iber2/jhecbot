@@ -41,6 +41,9 @@ client.on('message', msg => {
   else if (msg.content == 'creeper') {
     msg.channel.sendMessage('awww man')
   }
+  else if (msg.content.toLowerCase().includes('cause baby tonight')) {
+    msg.channel.sendMessage('THE CREEPERS TRYNA STEAL ALL OUR STUFF AGAIN')
+  }
   //}
 })
 
