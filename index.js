@@ -33,7 +33,7 @@ client.on('message', msg => {
     msg.channel.sendMessage('its lit')
   }
   else if (msg.content.toLowerCase().includes('emma')) {
-    msg.channel.sendMessage('absolutely')
+    msg.channel.sendMessage('absolutely not')
   }
   else if (msg.content.toLowerCase().includes('meatball')) {
     msg.channel.sendMessage('<:firesafety:653503546783825924>')
