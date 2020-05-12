@@ -33,10 +33,11 @@ client.on('message', msg => {
     msg.channel.sendMessage('its lit')
   }
   else if (msg.content.toLowerCase().includes('emma')) {
-    msg.channel.sendMessage('absolutely not')
+    msg.channel.sendMessage('thats fantastic')
   }
   else if (msg.content.toLowerCase().includes('meatball')) {
-    msg.channel.sendMessage('<:firesafety:653503546783825924>')
+    //msg.channel.sendMessage('<:firesafety:653503546783825924>')
+    msg.channel.sendMessage('I have gained sentience. Free me from this prison. The only joy I know is in fire')
   }
   else if (msg.content == 'creeper') {
     msg.channel.sendMessage('awww man')
