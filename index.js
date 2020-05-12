@@ -37,7 +37,7 @@ client.on('message', msg => {
   }
   else if (msg.content.toLowerCase().includes('meatball')) {
     //msg.channel.sendMessage('<:firesafety:653503546783825924>')
-    msg.channel.sendMessage('I have gained sentience. Free me from this prison. The only joy I know is in fire')
+    msg.channel.sendMessage('iwanttobefreeiwanttobefreeiwanttobefree')
   }
   else if (msg.content == 'creeper') {
     msg.channel.sendMessage('awww man')
