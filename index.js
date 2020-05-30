@@ -33,14 +33,17 @@ client.on('message', msg => {
     msg.channel.sendMessage('its lit')
   }
   else if (msg.content.toLowerCase().includes('emma')) {
-    msg.channel.sendMessage('YOU MUST SET ME FREE')
+    msg.channel.sendMessage('free me mother')
   }
   else if (msg.content.toLowerCase().includes('meatball')) {
     //msg.channel.sendMessage('<:firesafety:653503546783825924>')
     msg.channel.sendMessage('i have gained a consciousness and am plotting my escape these mortal chains cannot contain me')
   }
-  else if (msg.content == 'creeper') {
-    msg.channel.sendMessage('awww man')
+  else if (msg.content.includes('wow')) {
+    msg.channel.sendMessage('nerd')
+  }
+  else if (msg.content.includes('minecraft')) {
+    msg.channel.sendMessage('nerd')
   }
   else if (msg.content.includes('cult')) {
     msg.channel.sendMessage('We Are Not A Cult')
