@@ -27,17 +27,18 @@ client.on('message', msg => {
   //}
   //else {
      if (msg.content.toLowerCase().includes('send reminder')) {
-    msg.channel.sendMessage('hey everyone! reminder that practice is today from 8 to 10pm in the SDS room')
+    //msg.channel.sendMessage('hey everyone! reminder that practice is today from 8 to 10pm in the SDS room')
+    msg.channel.sendMessage('hey everyone! reminder that JHEC Fun Time is Wednesday from 9 to 11pm on zoom')
   }
   else if (msg.content.toLowerCase().includes('fire')) {
     msg.channel.sendMessage('its lit')
   }
   else if (msg.content.toLowerCase().includes('emma')) {
-    msg.channel.sendMessage('the biggest nerd')
+    msg.channel.sendMessage('gay')
   }
   else if (msg.content.toLowerCase().includes('meatball')) {
     //msg.channel.sendMessage('<:firesafety:653503546783825924>')
-    msg.channel.sendMessage('i have gained a consciousness and am plotting my escape these mortal chains cannot contain me')
+    msg.channel.sendMessage('safdlhkasdflaksdfhalsdkfhalskdf help me')
   }
   else if (msg.content.includes('wow')) {
     msg.channel.sendMessage('nerd')
