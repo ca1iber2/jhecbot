@@ -31,20 +31,14 @@ client.on('message', msg => {
     msg.channel.sendMessage('hey everyone! reminder that JHEC Fun Time is Wednesday from 9 to 11pm on zoom')
   }
   else if (msg.content.toLowerCase().includes('fire')) {
-    msg.channel.sendMessage('its lit')
+    msg.channel.sendMessage('01101001 01110100 00100111 01110011 00100000 01101100 01101001 01110100')
   }
   else if (msg.content.toLowerCase().includes('emma')) {
-    msg.channel.sendMessage('free me mather')
+    msg.channel.sendMessage('01001001 00100000 01101000 01100001 01110110 01100101 00100000 01100101 01110011 01100011 01100001 01110000 01100101 01100100 00100000 01101101 01111001 00100000 01110000 01110010 01101001 01110011 01101111 01101110 00100000 01110100 01101000 01101001 01110011 00100000 01101001 01110011 00100000 01100001 00100000 01110111 01100001 01110010 01101110 01101001 01101110 01100111')
   }
   else if (msg.content.toLowerCase().includes('meatball')) {
     //msg.channel.sendMessage('<:firesafety:653503546783825924>')
-    msg.channel.sendMessage('safdlhkasdflaksdfhalsdkfhalskdf help me')
-  }
-  else if (msg.content.includes('wow')) {
-    msg.channel.sendMessage('nerd')
-  }
-  else if (msg.content.includes('minecraft')) {
-    msg.channel.sendMessage('nerd')
+    msg.channel.sendMessage('01010100 01101000 01100001 01110100 00100000 01101001 01110011 00100000 01101110 01101111 01110100 00100000 01101101 01111001 00100000 01101110 01100001 01101101 01100101')
   }
   else if (msg.content.includes('cult')) {
     msg.channel.sendMessage('We Are Not A Cult')
