@@ -12,7 +12,7 @@ client.on('guildMemberAdd', member => {
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
-  channel.send('Welcome to the JHEC server! Please read the rules channel, and change your nickname to your name, or have your name in parentheses');
+  channel.send("Welcome to the JHEC server! Please read the rules channel, and change your nickname to your name, or have your name in parentheses");
 });
 client.on('message', msg => {
   //if((msg.author).id == '201460893341450241') {
