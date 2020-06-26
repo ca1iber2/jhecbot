@@ -6,7 +6,14 @@ const client = new Discord.Client()
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
 })
-
+client.on('guildMemberAdd', member => {
+  // Send the message to a designated channel on a server:
+  const channel = member.guild.channels.cache.find(ch => ch.name === 'general');
+  // Do nothing if the channel wasn't found on this server
+  if (!channel) return;
+  // Send the message, mentioning the member
+  channel.send(`Welcome to the JHEC server! Please read the rules channel, and change your nickname to your name, or have your name in parentheses`);
+});
 client.on('message', msg => {
   //if((msg.author).id == '201460893341450241') {
   //if(msg.content.toLowerCase().includes('a')) {
