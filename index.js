@@ -50,6 +50,9 @@ client.on('message', msg => {
   else if (msg.content.includes('cult')) {
     msg.channel.sendMessage('We Are Not A Cult')
   }
+  else if (msg.content.includes('CULT')) {
+    msg.channel.sendMessage('We Are Not A Cult')
+  }
   //}
 })
 
