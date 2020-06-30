@@ -45,7 +45,7 @@ client.on('message', msg => {
   //}
   else if (msg.content.toLowerCase().includes('meatball')) {
     //msg.channel.sendMessage('<:firesafety:653503546783825924>')
-    msg.channel.sendMessage('yes I am meatball')
+    msg.channel.sendMessage('yes that is me')
   }
   else if (msg.content.includes('cult')) {
     msg.channel.sendMessage('We Are Not A Cult')
