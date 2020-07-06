@@ -1,9 +1,9 @@
 
 const Discord = require('discord.js')
 const client = new Discord.Client()
-const HE = '729560821767602197';
-const SHE = '729560874272030802';
-const THEY = '729560854206611588';
+
+
+
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
@@ -28,16 +28,16 @@ client.on('message', msg => {
   //}
   //}
   //else {
-  if (message.content == '!role he') {
-    message.member.roles.add(HE);
+  if (msg.content == '!role he') {
+    msg.member.roles.add(729560821767602197)
     msg.channel.sendMessage('role added')
   })
-  else if (message.content == '!role she') {
-    message.member.roles.add(SHE);
+  else if (msg.content == '!role she') {
+    msg.member.roles.add(729560874272030802)
     msg.channel.sendMessage('role added')
   })
-  else if (message.content == '!role they') {
-    message.member.roles.add(THEY);
+  else if (msg.content == '!role they') {
+    msg.member.roles.add(729560854206611588)
     msg.channel.sendMessage('role added')
   })
      else if (msg.content.toLowerCase().includes('send reminder')) {
