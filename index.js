@@ -1,19 +1,14 @@
 
 const Discord = require('discord.js')
 const client = new Discord.Client()
-
+const HE = '729560821767602197';
+const SHE = '729560874272030802';
+const THEY = '729560854206611588';
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
 })
-client.on('guildMemberAdd', member => {
-  // Send the message to a designated channel on a server:
-  const channel = member.guild.channels.cache.find(ch => ch.name === 'general');
-  // Do nothing if the channel wasn't found on this server
-  if (!channel) return;
-  // Send the message, mentioning the member
-  channel.send("Welcome to the JHEC server! Please read the rules channel, and change your nickname to your name, or have your name in parentheses");
-});
+
 client.on('message', msg => {
   //if((msg.author).id == '201460893341450241') {
   //if(msg.content.toLowerCase().includes('a')) {
@@ -33,7 +28,16 @@ client.on('message', msg => {
   //}
   //}
   //else {
-     if (msg.content.toLowerCase().includes('send reminder')) {
+  if (message.content == '!role he') {
+    message.member.roles.add(HE);
+  })
+  else if (message.content == '!role she') {
+    message.member.roles.add(SHE);
+  })
+  else if (message.content == '!role they') {
+    message.member.roles.add(THEY);
+  })
+     else if (msg.content.toLowerCase().includes('send reminder')) {
     //msg.channel.sendMessage('hey everyone! reminder that practice is today from 8 to 10pm in the SDS room')
     msg.channel.sendMessage('hey everyone! reminder that JHEC Fun Time is Wednesday from 9 to 11pm on zoom')
   }
@@ -56,5 +60,10 @@ client.on('message', msg => {
   //}
 })
 
+client.on('guildMemberAdd', member => {
+  // Send the message to a designated channel on a server:
+  
+  member.send(`Welcome to the JHEC server! Please read the rules channel, and change your nickname to your name, or have your name in parentheses`)
+})
 
 client.login(process.env.BOT_TOKEN)
