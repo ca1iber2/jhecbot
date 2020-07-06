@@ -29,15 +29,15 @@ client.on('message', msg => {
   //}
   //else {
   if (msg.content == '!role he') {
-    msg.member.roles.add(729560821767602197)
+    msg.member.roles.add('729560821767602197')
     msg.channel.sendMessage('role added')
   })
   else if (msg.content == '!role she') {
-    msg.member.roles.add(729560874272030802)
+    msg.member.roles.add('729560874272030802')
     msg.channel.sendMessage('role added')
   })
   else if (msg.content == '!role they') {
-    msg.member.roles.add(729560854206611588)
+    msg.member.roles.add('729560854206611588')
     msg.channel.sendMessage('role added')
   })
      else if (msg.content.toLowerCase().includes('send reminder')) {
