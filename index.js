@@ -31,15 +31,15 @@ client.on('message', msg => {
   if (msg.content == '!role he') {
     msg.member.roles.add('729560821767602197')
     msg.channel.sendMessage('role added')
-  })
+  }
   else if (msg.content == '!role she') {
     msg.member.roles.add('729560874272030802')
     msg.channel.sendMessage('role added')
-  })
+  }
   else if (msg.content == '!role they') {
     msg.member.roles.add('729560854206611588')
     msg.channel.sendMessage('role added')
-  })
+  }
      else if (msg.content.toLowerCase().includes('send reminder')) {
     //msg.channel.sendMessage('hey everyone! reminder that practice is today from 8 to 10pm in the SDS room')
     msg.channel.sendMessage('hey everyone! reminder that JHEC Fun Time is Wednesday from 9 to 11pm on zoom')
