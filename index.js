@@ -30,12 +30,15 @@ client.on('message', msg => {
   //else {
   if (message.content == '!role he') {
     message.member.roles.add(HE);
+    msg.channel.sendMessage('role added')
   })
   else if (message.content == '!role she') {
     message.member.roles.add(SHE);
+    msg.channel.sendMessage('role added')
   })
   else if (message.content == '!role they') {
     message.member.roles.add(THEY);
+    msg.channel.sendMessage('role added')
   })
      else if (msg.content.toLowerCase().includes('send reminder')) {
     //msg.channel.sendMessage('hey everyone! reminder that practice is today from 8 to 10pm in the SDS room')
