@@ -66,7 +66,7 @@ client.on('message', msg => {
 client.on('guildMemberAdd', member => {
   // Send the message to a designated channel on a server:
   
-  member.send(`Welcome to the JHEC server! Please read the rules channel, and change your nickname to your name, or have your name in parentheses`)
+  member.send('Welcome to the JHEC server! Please read the rules channel, and change your nickname to your name, or have your name in parentheses')
 })
 
 client.login(process.env.BOT_TOKEN)
