@@ -10,6 +10,7 @@ client.on('ready', () => {
 })
 
 client.on('message', msg => {
+  //this part of the code uses a user id to detect when that user has sent a message and say something afterwards
   //if((msg.author).id == '201460893341450241') {
   //if(msg.content.toLowerCase().includes('a')) {
     //msg.channel.sendMessage('ok boomer');
@@ -28,6 +29,8 @@ client.on('message', msg => {
   //}
   //}
   //else {
+  //commands to add pronoun roles
+  //doesnt work as of july 13 2020
   if (msg.content == '!role he') {
     msg.member.roles.add('729560821767602197')
     msg.channel.sendMessage('role added')
@@ -40,6 +43,7 @@ client.on('message', msg => {
     msg.member.roles.add('729560854206611588')
     msg.channel.sendMessage('role added')
   }
+  //when send reminder is sent, bot sends reminder message
      else if (msg.content.toLowerCase().includes('send reminder')) {
     //msg.channel.sendMessage('hey everyone! reminder that practice is today from 8 to 10pm in the SDS room')
     msg.channel.sendMessage('hey everyone! reminder that JHEC Fun Time is Wednesday from 9 to 11pm on zoom')
