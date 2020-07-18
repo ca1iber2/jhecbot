@@ -37,11 +37,11 @@ client.on('message', msg => {
   else if ((msg.author).id == '275783651504029697'){
     if(msg.content.includes('i love you')) {
        msg.channel.sendMessage('I love you too emma');
-      break;
+      
   }
      else if (msg.content.includes('i love you meatball')) {
     msg.channel.sendMessage('I love you too emma')
-       break;
+       
   }
 }
   else{
