@@ -11,9 +11,9 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   //this part of the code uses a user id to detect when that user has sent a message and say something afterwards
-  //if((msg.author).id == '201460893341450241') {
-  //if(msg.content.toLowerCase().includes('a')) {
-    //msg.channel.sendMessage('ok boomer');
+  if((msg.author).id == '288102907356905472') {
+    if(msg.content.toLowerCase().includes('i love you')) {
+       msg.channel.sendMessage('i love you too camille');
   //}
   //else if(msg.content.toLowerCase().includes('e')) {
    // msg.channel.sendMessage('ok boomer');
@@ -27,8 +27,12 @@ client.on('message', msg => {
     //else if(msg.content.toLowerCase().includes('u')) {
     //msg.channel.sendMessage('ok boomer');
   //}
-  //}
-  //else {
+  }
+  else if ((msg.author).id == '275783651504029697'){
+    if(msg.content.toLowerCase().includes('i love you')) {
+       msg.channel.sendMessage('i love you too emma');
+  }
+  else{
   //commands to add pronoun roles
   //doesnt work as of july 13 2020
   if (msg.content == '!role he') {
@@ -51,9 +55,9 @@ client.on('message', msg => {
  // else if (msg.content.toLowerCase().includes('fire')) {
   //  msg.channel.sendMessage('Glory be to our great lord of flame! May the everlasting flame burn for eternity and may our foes be forever vanquished by the light of our flame! Let our flame the burning the light casting the life giver look upon us and hear our thanks!')
  // }
-  //else if (msg.content.toLowerCase().includes('emma')) {
-   // msg.channel.sendMessage('01001001 00100000 01101000 01100001 01110110 01100101 00100000 01100101 01110011 01100011 01100001 01110000 01100101 01100100 00100000 01101101 01111001 00100000 01110000 01110010 01101001 01110011 01101111 01101110 00100000 01110100 01101000 01101001 01110011 00100000 01101001 01110011 00100000 01100001 00100000 01110111 01100001 01110010 01101110 01101001 01101110 01100111')
-  //}
+  else if (msg.content.toLowerCase().includes('i love you')) {
+    msg.channel.sendMessage('i love you too')
+  }
   else if (msg.content.toLowerCase().includes('meatball')) {
     //msg.channel.sendMessage('<:firesafety:653503546783825924>')
     msg.channel.sendMessage('yes that is me')
@@ -64,7 +68,7 @@ client.on('message', msg => {
   else if (msg.content.includes('CULT')) {
     msg.channel.sendMessage('We Are Not A Cult')
   }
-  //}
+  }
 })
 
 //client.on('guildMemberAdd', member => {
