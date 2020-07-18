@@ -14,7 +14,8 @@ client.on('message', msg => {
   if((msg.author).id == '288102907356905472') {
     if(msg.content.toLowerCase().includes('i love you')) {
        msg.channel.sendMessage('i love you too camille');
-  //}
+  }
+  }
   //else if(msg.content.toLowerCase().includes('e')) {
    // msg.channel.sendMessage('ok boomer');
   //}
@@ -32,6 +33,7 @@ client.on('message', msg => {
     if(msg.content.toLowerCase().includes('i love you')) {
        msg.channel.sendMessage('i love you too emma');
   }
+}
   else{
   //commands to add pronoun roles
   //doesnt work as of july 13 2020
