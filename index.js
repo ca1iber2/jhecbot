@@ -10,15 +10,16 @@ client.on('ready', () => {
 })
 
 client.on('message', msg => {
+  var i = 1
   //this part of the code uses a user id to detect when that user has sent a message and say something afterwards
   if((msg.author).id == '288102907356905472') {
     if(msg.content.includes('i love you')) {
        msg.channel.sendMessage('i love you too camille');
-      break;
+      
   }
    else if (msg.content.includes('i love you meatball')) {
     msg.channel.sendMessage('I love you too camille')
-     break;
+     
   }
   //else if(msg.content.toLowerCase().includes('e')) {
    // msg.channel.sendMessage('ok boomer');
