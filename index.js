@@ -15,7 +15,7 @@ client.on('message', msg => {
     if(msg.content.toLowerCase().includes('i love you')) {
        msg.channel.sendMessage('i love you too camille');
   }
-  }
+  
   //else if(msg.content.toLowerCase().includes('e')) {
    // msg.channel.sendMessage('ok boomer');
   //}
