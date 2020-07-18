@@ -12,10 +12,12 @@ client.on('ready', () => {
 client.on('message', msg => {
   //this part of the code uses a user id to detect when that user has sent a message and say something afterwards
   if((msg.author).id == '288102907356905472') {
-    if(msg.content.toLowerCase().includes('i love you')) {
+    if(msg.content.includes('i love you')) {
        msg.channel.sendMessage('i love you too camille');
   }
-  
+   else if (msg.content.includes('i love you meatball')) {
+    msg.channel.sendMessage('I love you too camille')
+  }
   //else if(msg.content.toLowerCase().includes('e')) {
    // msg.channel.sendMessage('ok boomer');
   //}
@@ -30,8 +32,11 @@ client.on('message', msg => {
   //}
   }
   else if ((msg.author).id == '275783651504029697'){
-    if(msg.content.toLowerCase().includes('i love you')) {
+    if(msg.content.includes('i love you')) {
        msg.channel.sendMessage('i love you too emma');
+  }
+     else if (msg.content.includes('i love you meatball')) {
+    msg.channel.sendMessage('I love you too emma')
   }
 }
   else{
@@ -57,8 +62,11 @@ client.on('message', msg => {
  // else if (msg.content.toLowerCase().includes('fire')) {
   //  msg.channel.sendMessage('Glory be to our great lord of flame! May the everlasting flame burn for eternity and may our foes be forever vanquished by the light of our flame! Let our flame the burning the light casting the life giver look upon us and hear our thanks!')
  // }
-  else if (msg.content.toLowerCase().includes('i love you')) {
-    msg.channel.sendMessage('i love you too')
+  else if (msg.content.includes('i love you')) {
+    msg.channel.sendMessage('I love you too')
+  }
+    else if (msg.content.includes('i love you meatball')) {
+    msg.channel.sendMessage('I love you too')
   }
   else if (msg.content.toLowerCase().includes('meatball')) {
     //msg.channel.sendMessage('<:firesafety:653503546783825924>')
