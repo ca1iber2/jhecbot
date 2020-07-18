@@ -10,7 +10,7 @@ client.on('ready', () => {
 })
 
 client.on('message', msg => {
-  var i = 1
+  
   //this part of the code uses a user id to detect when that user has sent a message and say something afterwards
   if((msg.author).id == '288102907356905472') {
     if(msg.content.includes('i love you')) {
