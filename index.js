@@ -14,7 +14,7 @@ client.on('message', msg => {
   //this part of the code uses a user id to detect when that user has sent a message and say something afterwards
   if((msg.author).id == '288102907356905472') {
     if(msg.content.includes('i love you')) {
-       msg.channel.sendMessage('i love you too camille');
+       msg.channel.sendMessage('I love you too camille');
       
   }
    else if (msg.content.includes('i love you meatball')) {
@@ -36,7 +36,7 @@ client.on('message', msg => {
   }
   else if ((msg.author).id == '275783651504029697'){
     if(msg.content.includes('i love you')) {
-       msg.channel.sendMessage('i love you too emma');
+       msg.channel.sendMessage('I love you too emma');
       break;
   }
      else if (msg.content.includes('i love you meatball')) {
