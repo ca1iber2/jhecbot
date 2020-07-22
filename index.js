@@ -34,7 +34,7 @@ client.on('message', msg => {
   */
   //checks if message author is a bot
   if ((msg.author).id == '671864740942970933') {
-      break;
+      return;
   }
   
   else{
