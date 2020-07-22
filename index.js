@@ -44,14 +44,17 @@ client.on('message', msg => {
          msg.member.roles.add('729560821767602197')
          msg.channel.sendMessage('role added')
       }
+    
       else if (msg.content == '!role she') {
          msg.member.roles.add('729560874272030802')
          msg.channel.sendMessage('role added')
       }
+    
       else if (msg.content == '!role they') {
          msg.member.roles.add('729560854206611588')
          msg.channel.sendMessage('role added')
       }
+    
       //when send reminder is sent, bot sends reminder message
       else if (msg.content.toLowerCase().includes('send reminder')) {
          //msg.channel.sendMessage('hey everyone! reminder that practice is today from 8 to 10pm in the SDS room')
@@ -61,7 +64,6 @@ client.on('message', msg => {
       else if (msg.content.includes('i love you')) {
          if((msg.author).id == '288102907356905472') {
             msg.channel.sendMessage('I love you too camille');
-      
          }
          else if ((msg.author).id == '275783651504029697'){
             msg.channel.sendMessage('I love you too emma');
@@ -70,10 +72,10 @@ client.on('message', msg => {
             msg.channel.sendMessage('I love you too')
          }
       }
-         else if (msg.content.includes('i love you meatball')) {
+    
+      else if (msg.content.includes('i love you meatball')) {
          if((msg.author).id == '288102907356905472') {
             msg.channel.sendMessage('I love you too camille');
-      
          }
          else if ((msg.author).id == '275783651504029697'){
             msg.channel.sendMessage('I love you too emma');
@@ -82,13 +84,16 @@ client.on('message', msg => {
             msg.channel.sendMessage('I love you too')
          }
       }
+    
       else if (msg.content.toLowerCase().includes('meatball')) {
          //msg.channel.sendMessage('<:firesafety:653503546783825924>')
          msg.channel.sendMessage('yes that is me')
       }
+    
       else if (msg.content.includes('cult')) {
          msg.channel.sendMessage('We Are Not A Cult')
       }
+    
       else if (msg.content.includes('CULT')) {
          msg.channel.sendMessage('We Are Not A Cult')
       }
