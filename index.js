@@ -61,19 +61,7 @@ client.on('message', msg => {
          msg.channel.sendMessage('hey everyone! reminder that JHEC Fun Time is Wednesday from 9 to 11pm on zoom')
       }
  
-      else if (msg.content.includes('i love you')) {
-         if((msg.author).id == '288102907356905472') {
-            msg.channel.sendMessage('I love you too camille');
-         }
-         else if ((msg.author).id == '275783651504029697'){
-            msg.channel.sendMessage('I love you too emma');
-         }
-         else{
-            msg.channel.sendMessage('I love you too')
-         }
-      }
-    
-      else if (msg.content.includes('i love you meatball')) {
+      else if (msg.content.toLowerCase().includes('i love you')) {
          if((msg.author).id == '288102907356905472') {
             msg.channel.sendMessage('I love you too camille');
          }
@@ -90,13 +78,10 @@ client.on('message', msg => {
          msg.channel.sendMessage('yes that is me')
       }
     
-      else if (msg.content.includes('cult')) {
+      else if (msg.content.toLowerCase().includes('cult')) {
          msg.channel.sendMessage('We Are Not A Cult')
       }
-    
-      else if (msg.content.includes('CULT')) {
-         msg.channel.sendMessage('We Are Not A Cult')
-      }
+   
   }
 })
 
