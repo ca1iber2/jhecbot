@@ -55,6 +55,10 @@ client.on('message', msg => {
          msg.channel.sendMessage('role added')
       }
     
+      else if (msg.content == '!role red') {
+         msg.member.roles.add('735647659041357885')
+         msg.channel.sendMessage('role added')
+      }
       //when send reminder is sent, bot sends reminder message
       else if (msg.content.toLowerCase().includes('send reminder')) {
          //msg.channel.sendMessage('hey everyone! reminder that practice is today from 8 to 10pm in the SDS room')
