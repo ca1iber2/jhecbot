@@ -62,16 +62,14 @@ client.on('message', msg => {
       //when send reminder is sent, bot sends reminder message
       else if (msg.content.toLowerCase().includes('send reminder')) {
          //msg.channel.sendMessage('hey everyone! reminder that practice is today from 8 to 10pm in the SDS room')
-         msg.channel.sendMessage('hey @2021 @2022 @2023 @2024 Chickens! reminder that JHEC GBM is Monday from 8 to 10pm on zoom')
+         msg.channel.sendMessage('hey everyone! reminder that JHEC Practice is Monday from 8 to 9:30pm in the AMR MPR')
       }
  
       else if (msg.content.toLowerCase().includes('i love you')) {
          if((msg.author).id == '524343700055261185') {
             msg.channel.sendMessage('I love you too camille');
          }
-         else if ((msg.author).id == '275783651504029697'){
-            msg.channel.sendMessage('I love you too emma');
-         }
+         
          else{
             msg.channel.sendMessage('I love you too')
          }
