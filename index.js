@@ -80,6 +80,11 @@ client.on('message', msg => {
          msg.channel.sendMessage('yes that is me')
       }
     
+    else if (msg.content.toLowerCase().includes('kill you')) {
+         //msg.channel.sendMessage('<:firesafety:653503546783825924>')
+         msg.channel.sendMessage('you cannot kill me in a way that matters')
+      }
+    
       else if (msg.content.toLowerCase().includes('cult')) {
          msg.channel.sendMessage('We Are Not A Cult')
       }
