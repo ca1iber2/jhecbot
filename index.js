@@ -36,7 +36,9 @@ client.on('message', msg => {
   if ((msg.author).id == '671864740942970933') {
       return;
   }
-  
+  else if ((msg.author).id == '235148962103951360') {
+      msg.channel.sendMessage('carl im in love with you')
+  }
   else{
   //commands to add pronoun roles
   //doesnt work as of july 13 2020
