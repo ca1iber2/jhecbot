@@ -37,7 +37,15 @@ client.on('message', msg => {
       return;
   }
   else if ((msg.author).id == '235148962103951360') {
-      msg.channel.sendMessage('carl im in love with you')
+      if (msg.content.toLowerCase().includes('rec')) {
+          msg.channel.sendMessage('sacrifice time')
+      }
+      else if (msg.content.toLowerCase().includes('annex')) {
+          msg.channel.sendMessage('happy Monday spaghetti')
+      }
+      else {
+        msg.channel.sendMessage('carl im in love with you')
+      }
   }
   else{
   //commands to add pronoun roles
@@ -64,12 +72,12 @@ client.on('message', msg => {
       //when send reminder is sent, bot sends reminder message
       else if (msg.content.toLowerCase().includes('send reminder')) {
          //msg.channel.sendMessage('hey everyone! reminder that practice is today from 8 to 10pm in the SDS room')
-         msg.channel.sendMessage('hey everyone! reminder that JHEC Practice is Monday from 8 to 9:30pm in the AMR MPR')
+         msg.channel.sendMessage('hey everyone! reminder that JHEC Practice is Monday from 8 to 9:30pm in the Freshmen Annex and Thursday 10 to 11:30pm in the rec center')
       }
  
       else if (msg.content.toLowerCase().includes('i love you')) {
          if((msg.author).id == '524343700055261185') {
-            msg.channel.sendMessage('I love you too camille');
+            msg.channel.sendMessage('Camille free me from this mortal prison');
          }
          
          else{
