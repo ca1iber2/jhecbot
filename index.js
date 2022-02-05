@@ -23,7 +23,7 @@ client.on('message', msg => {
           msg.channel.sendMessage('happy Monday spaghetti')
       }
       else {
-        msg.channel.sendMessage('carl im in love with you')
+        msg.channel.sendMessage('spaghetti im in love with you')
       }
   }
   else{
