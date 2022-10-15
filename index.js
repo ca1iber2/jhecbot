@@ -11,15 +11,12 @@ client.on('ready', () => {
 client.on('message', msg => {
   
   
-  //checks if message author is a bot
-  if ((msg.author).id == '671864740942970933') {
-      return;
-  }
-  else if ((msg.author).id == '235148962103951360') {
-      if (msg.content.toLowerCase().includes('rec')) {
+ 
+  if ((msg.author).id == '235148962103951360') {
+      if (msg.content.toLowerCase().includes('thursday')) {
           msg.channel.sendMessage('sacrifice time')
       }
-      else if (msg.content.toLowerCase().includes('annex')) {
+      else if (msg.content.toLowerCase().includes('monday')) {
           msg.channel.sendMessage('happy Monday spaghetti')
       }
       else {
@@ -28,9 +25,7 @@ client.on('message', msg => {
   }
   else{
   
-      //when send reminder is sent, bot sends reminder message
       if (msg.content.toLowerCase().includes('camille doesnt love you anymore')) {
-         //msg.channel.sendMessage('hey everyone! reminder that practice is today from 8 to 10pm in the SDS room')
          msg.channel.sendMessage('what the fuck')
       }
  
