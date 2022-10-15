@@ -29,9 +29,9 @@ client.on('message', msg => {
   else{
   
       //when send reminder is sent, bot sends reminder message
-      if (msg.content.toLowerCase().includes('send reminder')) {
+      if (msg.content.toLowerCase().includes('camille doesnt love you anymore')) {
          //msg.channel.sendMessage('hey everyone! reminder that practice is today from 8 to 10pm in the SDS room')
-         msg.channel.sendMessage('hey everyone! reminder that JHEC Practice is Monday from 8 to 9:30pm in the Freshmen Annex and Thursday 10 to 11:30pm in the rec center')
+         msg.channel.sendMessage('what the fuck')
       }
  
       else if (msg.content.toLowerCase().includes('i love you')) {
