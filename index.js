@@ -9,10 +9,11 @@ client.on('ready', () => {
 })
 
 client.on('message', msg => {
-  
-  
- 
-  if ((msg.author).id == '235148962103951360') {
+  //checks if message author is a bot
+  if ((msg.author).id == '671864740942970933') {
+      return;
+  }
+  else if ((msg.author).id == '235148962103951360') {
       if (msg.content.toLowerCase().includes('thursday')) {
           msg.channel.sendMessage('sacrifice time')
       }
